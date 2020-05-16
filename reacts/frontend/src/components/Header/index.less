@@ -1,0 +1,49 @@
+@BG: #2A2A2A;
+
+.home-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    .logo-header {
+        height: 1rem;
+        background-color: @BG;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        img {
+           
+            height: .4rem;
+            margin: .05rem 0 .05rem .1rem;
+        }
+        p {
+            width: 1rem;
+            height: 1rem;
+            line-height: 1rem;
+            text-align:center;
+            margin:0;
+        }
+
+    }
+    .category {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        padding: .1rem 0;
+        background-color:@BG;
+        li {
+            line-height: .3rem;
+            text-align: center;
+            color:#fff;
+            font-size: .1rem;
+            border-top: .02rem solid lighten(@BG, 20%);
+            &.active {
+                color: lightgreen;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "sourceMap": true,
+    "noImplicitAny": true, // 是否不允许出现隐含的any类型
+    "module": "commonjs",  // 模块规范
+    "target": "es5",
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "esModuleInterop": true 
+  },
+  "include": [
+    "./src/**/*"
+  ]
+}
